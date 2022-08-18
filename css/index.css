@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: DS-Digital;
+  src: url(../font/ds_digital/DS-DIGIB.TTF);
+}
+
+body,
+html {
+  padding: 5px;
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.greeting {
+  font-family: 'Patua One', cursive;
+  color: aliceblue;
+  font-size: 35px;
+}
+
+/* clock  */
+.clock {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.time {
+  font-size: 60px;
+  font-family: DS-Digital;
+  font-weight: bold;
+}
+
+.date-time {
+  font-family: DS-Digital;
+  font-size: 26px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .time {
+    font-size: 50px;
+  }
+}
